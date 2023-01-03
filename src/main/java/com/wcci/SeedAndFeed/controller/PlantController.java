@@ -16,12 +16,13 @@ public class PlantController {
         this.plantRepo = plantRepo;
     }
 
-    @CrossOrigin(origins = "https://seed-and-feed-backend.herokuapp.com/")
+//    @CrossOrigin(origins = "https://seed-and-feed-backend.herokuapp.com/")
     @GetMapping("/")
     public Iterable<Plant> getPlants() {
         return plantRepo.findAll();
     }
 
+//    @CrossOrigin(origins = "https://seed-and-feed-backend.herokuapp.com/")
     @GetMapping("/plant/{id}")
     public Plant getSinglePlant(@PathVariable long id) {
         return plantRepo.findById(id).get();
