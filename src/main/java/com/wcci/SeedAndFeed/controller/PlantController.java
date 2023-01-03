@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 
 @RestController
-@CrossOrigin
+
 public class PlantController {
    private PlantRepository plantRepo;
 
@@ -16,6 +16,7 @@ public class PlantController {
         this.plantRepo = plantRepo;
     }
 
+    @CrossOrigin(origins = "https://seed-and-feed-backend.herokuapp.com/")
     @GetMapping("/")
     public Iterable<Plant> getPlants() {
         return plantRepo.findAll();
