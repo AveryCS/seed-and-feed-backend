@@ -1,6 +1,6 @@
-.gradle
+#.gradle
 build/
-!gradle/wrapper/gradle-wrapper.jar
+#!gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**
 !**/src/test/**
 
@@ -31,7 +31,7 @@ out/
 /nbbuild/
 /dist/
 /nbdist/
-/.nb-gradle/
+#/.nb-gradle/
 
 ### VS Code ###
 .vscode/
@@ -149,8 +149,8 @@ local.properties
 .idea/**/dbnavigator.xml
 
 # Gradle
-.idea/**/gradle.xml
-.idea/**/libraries
+#.idea/**/gradle.xml
+#.idea/**/libraries
 
 # Gradle and Maven with auto-import
 # When using Gradle or Maven with auto-import, you should exclude module files,
